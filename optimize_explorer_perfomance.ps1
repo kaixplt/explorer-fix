@@ -20,5 +20,5 @@ New-Item -Path "HKCU:\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows
 # Crear el valor de cadena FolderType con el valor NotSpecified / Create the string value FolderType with the value NotSpecified
 New-ItemProperty -Path "HKCU:\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags\AllFolders\Shell" -Name "FolderType" -Value "NotSpecified" -PropertyType String -Force
 
-# Print a success message when finished
-Write-Host "The script has successfully completed. Windows Explorer performance should now be optimized."
+# Print a success message when finished with green color
+Write-Host "The script has successfully completed. Windows Explorer performance should now be optimized." -ForegroundColor Green
