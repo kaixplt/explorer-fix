@@ -1,7 +1,7 @@
 # Ensure the script can run with elevated privileges
 if (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) {
-    Write-Warning "Please run this script as an Administrator!"
-    exit
+    Write-Warning "This script needs to be run as Administrator! PowerShell will not close, please run as Administrator and try again."
+    return  # Exit without closing PowerShell
 }
 
 # Eliminar Bags y BagMRU si existen / Delete Bags and BagMRU if they exist
@@ -19,3 +19,6 @@ New-Item -Path "HKCU:\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows
 
 # Crear el valor de cadena FolderType con el valor NotSpecified / Create the string value FolderType with the value NotSpecified
 New-ItemProperty -Path "HKCU:\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags\AllFolders\Shell" -Name "FolderType" -Value "NotSpecified" -PropertyType String -Force
+
+# Print a success message when finished
+Write-Host "The script has successfully completed. Windows Explorer performance should now be optimized."
