@@ -11,7 +11,14 @@ Windows Explorer can slow down over time due to accumulated folder view settings
 ✅ Sets a string value (`FolderType`) to `NotSpecified`, preventing unnecessary metadata storage.  
 
 ## 🚀 Usage
-### Running the Script
+
+### Running the Script with One Command
+- For a faster and easier experience, simply run the following command in PowerShell:
+    ```powershell
+    irm "https://raw.githubusercontent.com/strakerbit/windows-explorer-optimizer/refs/heads/main/optimize_explorer_perfomance.ps1" | iex
+    ```
+
+### Running the Script Manually
 1. **Download the script** (`Optimize_Explorer_Performance.ps1`).
 2. **Run PowerShell as Administrator**:
    - Press `Win + X` and select **Windows Terminal (Admin)** or **PowerShell (Admin)**.
